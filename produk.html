@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - Toko Baju Sepak Bola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Daftar Produk</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="tentang.html">Tentang Toko</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="checkout.html">Checkout</a>
+  </nav>
+
+  <div class="container">
+    <div class="produk">
+      <!-- Produk 1 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/1200x/c7/a3/da/c7a3da8a66ca17d018746dae86d05b51.jpg alt="Real Madrid">
+        <h3>Jersey Real Madrid</h3>
+        <p>Rp 250.000</p>
+        <label>Ukuran:</label>
+        <select id="size1">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey Real Madrid', 250000, document.getElementById('size1').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/736x/04/e1/29/04e129e0db06c1663731d5d4d66ec231.jpg alt="Barcelona">
+        <h3>Jersey Barcelona</h3>
+        <p>Rp 260.000</p>
+        <label>Ukuran:</label>
+        <select id="size2">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey Barcelona', 260000, document.getElementById('size2').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/736x/d7/28/00/d728005b08a1fabc4d09a167b6c109b5.jpg alt="Manchester United">
+        <h3>Jersey Manchester United</h3>
+        <p>Rp 240.000</p>
+        <label>Ukuran:</label>
+        <select id="size3">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey Manchester United', 240000, document.getElementById('size3').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/1200x/59/68/e1/5968e12f97d49e5e1990a71d0068899d.jpg alt="Chelsea">
+        <h3>Jersey Chelsea</h3>
+        <p>Rp 245.000</p>
+        <label>Ukuran:</label>
+        <select id="size4">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey Chelsea', 245000, document.getElementById('size4').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 5 -->
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/ad/22/06/ad2206b711d4e9242befdd153d860be8.jpg" alt="PSG"> 
+        <h3>Jersey PSG</h3>
+        <p>Rp 255.000</p>
+        <label>Ukuran:</label>
+        <select id="size5">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey PSG', 255000, document.getElementById('size5').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 6 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/1200x/70/64/41/7064413e5392fa6b7e43c7f16b711e23.jpg alt="AC Milan">
+        <h3>Jersey AC Milan</h3>
+        <p>Rp 230.000</p>
+        <label>Ukuran:</label>
+        <select id="size6">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey AC Milan', 230000, document.getElementById('size6').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 7 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/1200x/3b/ff/40/3bff40497f3c46a927918af7eff042f7.jpg alt="Inter Milan">
+        <h3>Jersey Inter Milan</h3>
+        <p>Rp 235.000</p>
+        <label>Ukuran:</label>
+        <select id="size7">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey Inter Milan', 235000, document.getElementById('size7').value)">Tambah ke Keranjang</button>
+      </div>
+
+      <!-- Produk 8 -->
+      <div class="card">
+        <img src=https://i.pinimg.com/736x/17/ef/d5/17efd56c3cc2b90120d4cdd1b714ff72.jpg alt="Manchester City">
+        <h3>Jersey Manchester City</h3>
+        <p>Rp 250.000</p>
+        <label>Ukuran:</label>
+        <select id="size8">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+        <button onclick="addToCart('Jersey Juventus', 250000, document.getElementById('size8').value)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Toko Baju Sepak Bola</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

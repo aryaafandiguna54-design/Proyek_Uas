@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: hsl(51, 96%, 44%);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #006400;
+  color: hsl(0, 82%, 2%);
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  background: #228b22;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #2709d3;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background: yellow;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  animation: berjalan 10s linear infinite;
+}
+
+@keyframes berjalan {
+  from {transform: translateX(100%);}
+  to {transform: translateX(-100%);}
+}
+
+.container {
+  padding: 20px;
+}
+
+.produk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #09d83c;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+  text-align: center;
+}
+
+.card img {
+  max-width: 200px;   /* ukuran maksimal biar seragam */
+  height: auto;
+  margin: 0 auto;     /* biar rata tengah */
+  display: block;
+}
+button {
+  background: #006400;
+  color: #e9e50e;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #228b22;
+}
+
+.icon {
+  width: 20px;
+  vertical-align: middle;
+}

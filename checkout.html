@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Toko Baju Sepak Bola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Checkout <img src="img/cart.png" class="icon"></h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="tentang.html">Tentang Toko</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="checkout.html">Checkout</a>
+  </nav>
+
+  <div class="container">
+    <h2>Keranjang Belanja</h2>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Ukuran</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h3>Total: Rp <span id="total">0</span></h3>
+
+    <h2>Metode Pembayaran</h2>
+    <form>
+      <label><input type="radio" name="pembayaran" value="Cash"> Cash</label><br>
+      <label><input type="radio" name="pembayaran" value="Transfer Bank"> Transfer Bank</label><br>
+      <label><input type="radio" name="pembayaran" value="E-Wallet"> E-Wallet</label><br>
+      <button type="button" onclick="checkout()">Bayar Sekarang</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Toko Baju Sepak Bola</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
